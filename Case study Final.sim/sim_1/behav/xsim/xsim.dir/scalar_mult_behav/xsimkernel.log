@@ -1,0 +1,7 @@
+Running: xsim.dir/scalar_mult_behav/xsimk -simmode gui -wdb scalar_mult_behav.wdb -simrunnum 0 -socket 33903
+Design successfully loaded
+Design Loading Memory Usage: 27864 KB (Peak: 27920 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 109600 KB (Peak: 167132 KB)
+Simulation CPU Usage: 20 ms

@@ -1,0 +1,7 @@
+Running: xsim.dir/finite_inversion_tb_behav/xsimk -simmode gui -wdb finite_inversion_tb_behav.wdb -simrunnum 0 -socket 51493
+Design successfully loaded
+Design Loading Memory Usage: 27772 KB (Peak: 27892 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 113868 KB (Peak: 167040 KB)
+Simulation CPU Usage: 20 ms

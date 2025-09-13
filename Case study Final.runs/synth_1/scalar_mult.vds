@@ -1,0 +1,427 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat May 10 23:50:26 2025
+# Process ID: 672464
+# Current directory: /users/misc/raghavm22/Desktop/Case study Final/Case study Final.runs/synth_1
+# Command line: vivado -log scalar_mult.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source scalar_mult.tcl
+# Log file: /users/misc/raghavm22/Desktop/Case study Final/Case study Final.runs/synth_1/scalar_mult.vds
+# Journal file: /users/misc/raghavm22/Desktop/Case study Final/Case study Final.runs/synth_1/vivado.jou
+# Running On: csews202, OS: Linux, CPU Frequency: 2100.000 MHz, CPU Physical cores: 16, Host memory: 33304 MB
+#-----------------------------------------------------------
+source scalar_mult.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/utils_1/imports/synth_1/scalar_mult.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from /users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/utils_1/imports/synth_1/scalar_mult.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top scalar_mult -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 672522
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2412.637 ; gain = 380.707 ; free physical = 21824 ; free virtual = 27778
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.049; parent = 1634.794; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3382.414; parent = 2412.641; children = 969.773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'scalar_mult' [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:23]
+INFO: [Synth 8-6157] synthesizing module 'finite_multiplier' [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_multiplier.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dsp_mul' [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/dsp_mul.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dsp_mul' (0#1) [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/dsp_mul.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_multiplier.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'finite_multiplier' (0#1) [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_multiplier.v:23]
+INFO: [Synth 8-6157] synthesizing module 'finite_adder' [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'simple_adder' [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/simple_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'simple_adder' (0#1) [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/simple_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'simple_subtractor' [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/simple_subtractor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'simple_subtractor' (0#1) [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/simple_subtractor.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_adder.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'finite_adder' (0#1) [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'finite_subtractor' [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_subtractor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'finite_subtractor' (0#1) [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_subtractor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'finite_inversion' [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_inversion.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'finite_inversion' (0#1) [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_inversion.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'scalar_mult' (0#1) [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:23]
+WARNING: [Synth 8-7137] Register c_in_reg in module finite_adder has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_adder.v:45]
+WARNING: [Synth 8-7137] Register bo_in_reg in module finite_adder has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_adder.v:46]
+WARNING: [Synth 8-6014] Unused sequential element diff_reg was removed.  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_subtractor.v:38]
+WARNING: [Synth 8-7137] Register u_reg in module finite_inversion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_inversion.v:121]
+WARNING: [Synth 8-7137] Register v_reg in module finite_inversion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_inversion.v:121]
+WARNING: [Synth 8-7137] Register x1_reg in module finite_inversion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_inversion.v:174]
+WARNING: [Synth 8-7137] Register x2_reg in module finite_inversion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_inversion.v:175]
+WARNING: [Synth 8-7137] Register X1_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:98]
+WARNING: [Synth 8-7137] Register X3_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:101]
+WARNING: [Synth 8-7137] Register c_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:115]
+WARNING: [Synth 8-7137] Register a_add_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:51]
+WARNING: [Synth 8-7137] Register b_add_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:51]
+WARNING: [Synth 8-7137] Register start_add_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:51]
+WARNING: [Synth 8-7137] Register a_sub_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:52]
+WARNING: [Synth 8-7137] Register b_sub_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:52]
+WARNING: [Synth 8-7137] Register start_sub_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:52]
+WARNING: [Synth 8-7137] Register a_mul_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:50]
+WARNING: [Synth 8-7137] Register b_mul_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:50]
+WARNING: [Synth 8-7137] Register start_mul_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:50]
+WARNING: [Synth 8-7137] Register a_inv_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:53]
+WARNING: [Synth 8-7137] Register start_inv_reg in module scalar_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v:53]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2507.605 ; gain = 475.676 ; free physical = 21891 ; free virtual = 27846
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.049; parent = 1634.794; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3477.383; parent = 2507.609; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2522.449 ; gain = 490.520 ; free physical = 21890 ; free virtual = 27846
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.049; parent = 1634.794; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3492.227; parent = 2522.453; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2530.453 ; gain = 498.523 ; free physical = 21890 ; free virtual = 27846
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.049; parent = 1634.794; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3500.230; parent = 2530.457; children = 969.773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dsp_mul'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'finite_multiplier'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'finite_adder'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'finite_inversion'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'scalar_mult'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                 COMPUTE |                               01 |                               01
+                    DONE |                               10 |                               10
+                  iSTATE |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dsp_mul'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+               WAIT_MULT |                               01 |                              001
+                  REDUCE |                               10 |                              010
+                     OUT |                               11 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'finite_multiplier'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 CYCLE_1 |                              000 |                              000
+                 CYCLE_2 |                              001 |                              001
+                 CYCLE_3 |                              010 |                              010
+                 CYCLE_4 |                              011 |                              011
+                 CYCLE_5 |                              100 |                              100
+                 CYCLE_6 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'finite_adder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                    INIT |                               01 |                               01
+                     RUN |                               10 |                               10
+                    DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'finite_inversion'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  STEP_3 |                           000000 |                           000000
+                  STEP_4 |                           000001 |                           011110
+                  STEP_5 |                           000010 |                           011000
+             WAIT_STEP_5 |                           000011 |                           011001
+                  STEP_6 |                           000100 |                           011010
+             WAIT_STEP_6 |                           000101 |                           011011
+                 STEP_7A |                           000110 |                           000001
+            WAIT_STEP_7A |                           000111 |                           000010
+                 STEP_7B |                           001000 |                           000011
+            WAIT_STEP_7B |                           001001 |                           000100
+                  STEP_8 |                           001010 |                           011100
+             WAIT_STEP_8 |                           001011 |                           011101
+                 STEP_9A |                           001100 |                           000110
+            WAIT_STEP_9A |                           001101 |                           000111
+                 STEP_9B |                           001110 |                           001000
+            WAIT_STEP_9B |                           001111 |                           001001
+                 STEP_10 |                           010000 |                           001010
+            WAIT_STEP_10 |                           010001 |                           001011
+                STEP_11A |                           010010 |                           001100
+           WAIT_STEP_11A |                           010011 |                           001101
+                STEP_11B |                           010100 |                           001110
+           WAIT_STEP_11B |                           010101 |                           001111
+                 STEP_12 |                           010110 |                           010000
+            WAIT_STEP_12 |                           010111 |                           010001
+                STEP_13A |                           011000 |                           010010
+           WAIT_STEP_13A |                           011001 |                           010011
+                STEP_13B |                           011010 |                           010100
+           WAIT_STEP_13B |                           011011 |                           010101
+                 STEP_14 |                           011100 |                           010110
+                STEP_15A |                           011101 |                           011111
+           WAIT_STEP_15A |                           011110 |                           100000
+                STEP_15B |                           011111 |                           100001
+           WAIT_STEP_15B |                           100000 |                           100010
+                     OUT |                           100001 |                           010111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'scalar_mult'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2617.719 ; gain = 585.789 ; free physical = 21664 ; free virtual = 27620
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2017.732; parent = 1805.776; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3587.496; parent = 2617.723; children = 969.773
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input  520 Bit       Adders := 1     
+	   3 Input  260 Bit       Adders := 1     
+	   3 Input  257 Bit       Adders := 4     
+	   2 Input  257 Bit       Adders := 2     
+	   3 Input  255 Bit       Adders := 1     
+	   4 Input   90 Bit       Adders := 3     
+	   3 Input   65 Bit       Adders := 1     
+	   4 Input   65 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              520 Bit    Registers := 1     
+	              260 Bit    Registers := 1     
+	              257 Bit    Registers := 4     
+	              256 Bit    Registers := 2     
+	              255 Bit    Registers := 31    
+	               64 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   4 Input  520 Bit        Muxes := 1     
+	   4 Input  260 Bit        Muxes := 2     
+	   2 Input  257 Bit        Muxes := 10    
+	   4 Input  257 Bit        Muxes := 4     
+	   6 Input  256 Bit        Muxes := 4     
+	   2 Input  256 Bit        Muxes := 1     
+	   2 Input  255 Bit        Muxes := 4     
+	  34 Input  255 Bit        Muxes := 10    
+	   4 Input  175 Bit        Muxes := 1     
+	   6 Input   64 Bit        Muxes := 3     
+	  34 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 18    
+	   6 Input    1 Bit        Muxes := 8     
+	  34 Input    1 Bit        Muxes := 33    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mult_result, operation Mode is: A*B.
+DSP Report: operator mult_result is absorbed into DSP mult_result.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21490 ; free virtual = 27461
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2251.769; parent = 2039.994; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3856.324; parent = 2886.551; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp_mul     | A*B         | 24     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21490 ; free virtual = 27461
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2251.769; parent = 2039.994; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3856.324; parent = 2886.551; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21498 ; free virtual = 27469
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2251.769; parent = 2039.994; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3856.324; parent = 2886.551; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21496 ; free virtual = 27467
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2251.769; parent = 2039.994; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3856.324; parent = 2886.551; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21496 ; free virtual = 27467
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2251.769; parent = 2039.994; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3856.324; parent = 2886.551; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21496 ; free virtual = 27467
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2251.769; parent = 2039.994; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3856.324; parent = 2886.551; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21496 ; free virtual = 27467
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2251.769; parent = 2039.994; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3856.324; parent = 2886.551; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21496 ; free virtual = 27467
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2251.769; parent = 2039.994; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3856.324; parent = 2886.551; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21496 ; free virtual = 27467
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2251.769; parent = 2039.994; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3856.324; parent = 2886.551; children = 969.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp_mul     | A*B         | 24     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |  1322|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |   761|
+|5     |LUT2    |  2141|
+|6     |LUT3    |  2486|
+|7     |LUT4    |  3100|
+|8     |LUT5    |  2881|
+|9     |LUT6    |  5220|
+|10    |MUXF7   |   366|
+|11    |MUXF8   |    50|
+|12    |FDCE    |  7189|
+|13    |FDPE    |   520|
+|14    |FDRE    |  3100|
+|15    |FDSE    |   258|
+|16    |LDC     |   255|
+|17    |IBUF    |   512|
+|18    |OBUF    |   256|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------+------+
+|      |Instance            |Module            |Cells |
++------+--------------------+------------------+------+
+|1     |top                 |                  | 30419|
+|2     |  add               |finite_adder      |  1275|
+|3     |    uut             |simple_adder      |    64|
+|4     |    uuts            |simple_subtractor |   333|
+|5     |  inv               |finite_inversion  |  7749|
+|6     |  mul               |finite_multiplier |  6379|
+|7     |    multiplier_inst |dsp_mul           |  3473|
+|8     |  sub               |finite_subtractor |  1531|
++------+--------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21496 ; free virtual = 27467
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2251.769; parent = 2039.994; children = 212.255
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3856.324; parent = 2886.551; children = 969.773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2886.547 ; gain = 854.617 ; free physical = 21498 ; free virtual = 27469
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2886.555 ; gain = 854.617 ; free physical = 21497 ; free virtual = 27468
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2886.754 ; gain = 0.000 ; free physical = 21595 ; free virtual = 27566
+INFO: [Netlist 29-17] Analyzing 1994 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2934.777 ; gain = 0.000 ; free physical = 21506 ; free virtual = 27477
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 255 instances were transformed.
+  LDC => LDCE: 255 instances
+
+Synth Design complete, checksum: 7b98d1ab
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:34 . Memory (MB): peak = 2934.777 ; gain = 909.785 ; free physical = 21735 ; free virtual = 27706
+INFO: [Common 17-1381] The checkpoint '/users/misc/raghavm22/Desktop/Case study Final/Case study Final.runs/synth_1/scalar_mult.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file scalar_mult_utilization_synth.rpt -pb scalar_mult_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 10 23:51:08 2025...

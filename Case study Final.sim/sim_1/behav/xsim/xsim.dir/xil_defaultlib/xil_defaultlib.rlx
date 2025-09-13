@@ -1,0 +1,20 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sim_1/new/dsp_mul_tb.v,1746679908,verilog,,,,dsp_mul_tb,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sim_1/new/finite_adder_tb.v,1746676303,verilog,,,,finite_adder_tb,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sim_1/new/finite_inversion_tb.v,1746716189,verilog,,,,finite_inversion_tb,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sim_1/new/finite_multiplier_tb.v,1746731094,verilog,,,,finite_multiplier_tb,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sim_1/new/scalar_mult_tb.v,1746924675,verilog,,,,scalar_mult_tb,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/dsp_mul.v,1746678823,verilog,,/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_adder.v,,dsp_mul,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_adder.v,1746675268,verilog,,/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_inversion.v,,finite_adder,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_inv.v,1746915629,verilog,,/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_multiplier.v,,finite_inv,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_inversion.v,1746924840,verilog,,/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_multiplier.v,,finite_inversion,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_multiplier.v,1746914452,verilog,,/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_subtractor.v,,finite_multiplier,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/finite_subtractor.v,1746736050,verilog,,/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v,,finite_subtractor,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/mux_2to1.v,1746715110,verilog,,/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/simple_adder.v,,mux_2to1,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/scalar_mult.v,1746921133,verilog,,/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/simple_adder.v,,scalar_mult,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/simple_adder.v,1746675263,verilog,,/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/simple_subtractor.v,,simple_adder,,,,,,,,
+/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sources_1/new/simple_subtractor.v,1746675265,verilog,,/users/misc/raghavm22/Desktop/Case study Final/Case study Final.srcs/sim_1/new/scalar_mult_tb.v,,simple_subtractor,,,,,,,,

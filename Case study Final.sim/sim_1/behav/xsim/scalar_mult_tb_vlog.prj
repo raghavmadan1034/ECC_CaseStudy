@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Case study Final.srcs/sources_1/new/dsp_mul.v" \
+"../../../../Case study Final.srcs/sources_1/new/finite_adder.v" \
+"../../../../Case study Final.srcs/sources_1/new/finite_inversion.v" \
+"../../../../Case study Final.srcs/sources_1/new/finite_multiplier.v" \
+"../../../../Case study Final.srcs/sources_1/new/finite_subtractor.v" \
+"../../../../Case study Final.srcs/sources_1/new/scalar_mult.v" \
+"../../../../Case study Final.srcs/sources_1/new/simple_adder.v" \
+"../../../../Case study Final.srcs/sources_1/new/simple_subtractor.v" \
+"../../../../Case study Final.srcs/sim_1/new/scalar_mult_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
